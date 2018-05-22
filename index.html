@@ -47,30 +47,31 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#333333">
 
+    <!--JQuery & UI-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
   </head>
   <body>
     <header role="banner">
-      <nav role="navigation">
-        <p class="logo"><a href="index.html" title="WebSlides">WebSlides</a></p>
+      <nav role="navigation" class="navbar">        
         <ul>
           <li class="github">
-            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
-              <svg class="fa-github">
-                <use xlink:href="#fa-github"></use>
-              </svg>
-              <em>WebSlides</em>
-            </a>
+            <a href="#slide=1">Inicio</a>
           </li>
           <li class="twitter">
-            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
-              <svg class="fa-twitter">
-                <use xlink:href="#fa-twitter"></use>
-              </svg>
-              <em>@WebSlides</em>
-            </a>
-          </li>          
+            <a href="#slide=2">Introducción</a>
+          </li>
+          <li class="github">
+            <a href="#slide=3">Contenido</a>
+          </li>
+          <li class="twitter">
+            <a href="#slide=5">Ejercicio</a>
+          </li>
+          <li class="github">
+            <a href="#slide=7">Referencias</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -151,7 +152,7 @@
           <div class="wrap hidden" data-sub="caracteristicas">
             
                 <h4>Características</h4>
-                <div class="subSlide button bg-blue" data-sub="menu" >Menú</div>
+                <div class="subSlide button bg-blue" data-sub="menu" >Regresar</div>
                 <ul class="description">
                   <li>
                       <svg>
@@ -234,7 +235,7 @@
                 </ul>              
           </div>
           <div class="wrap hidden" data-sub="conversion">
-            <div class="subSlide button bg-blue" data-sub="menu" >Menú</div>
+            <div class="subSlide button bg-blue" data-sub="menu" >Regresar</div>
             <p class="text-intro">Tomando en cuenta la información anterior sobre las posiciones de cada bit, la conversión del sistema binario al decimal se realiza como sigue:</p>
             <p class="content-center">Convertir 0101101 a decimal</p>
             <ul class="description">
@@ -303,17 +304,91 @@
                   Presiona el botón Iniciar y haz lo que se te pide.
               </p>
 
-              <div class="bg-red content-right ">                  
-                  <svg>
-                      <use xlink:href="#fa-exclamation"></use>
-                  </svg>
-                  <p>
+              <div class="bg-red wrap size-70">
+                  <p class="importante">
+                      <svg class="">
+                          <use xlink:href="#fa-exclamation-circle"></use>
+                      </svg>
                       Puedes efectuar el ejercicio las veces que consideres necesarias, ya que te servirá como práctica para la Evidencia de Aprendizaje.
-                  </p>                  
-                </div>
+                  </p>
+              </div>
+              <a href="#slide=6" class="button slide-bottom content-center" style="display: block; width: 150px; margin-top: 1rem;" >Iniciar</a>
           </div>
         </section>
+        <section class="cuestionario" style="justify-content: space-between;">
+          <div class="wrap" style="flex: 0 1 auto;" id="instrucciones" >
+            <p class="text-info" > Selecciona la respuesta y presiona el botón <strong>Enviar</strong></p>
+          </div>
+          <div class="wrap" style="flex: 1 1 auto;" >
+            <div class="pregunta active opcion" data-id="1" >
+              <p>1.- La conversión del número binario 01100011 a decimal da como resultado:</p>
+              <ul class="flexblock activity respuesta">
+                <li data-v="0">89</li>
+                <li data-v="0">3</li>
+                <li data-v="1" >99</li>
+                <li data-v="0">92</li>
+              </ul>
+              <div class="retro"></div>
+            </div>
+            <div class="pregunta opcion" data-id="2" >
+                <p>2.- La conversión del número binario 11010000 a decimal da como resultado:</p>
+                <ul class="flexblock activity respuesta">
+                  <li data-v="0">60</li>
+                  <li data-v="1">208</li>
+                  <li data-v="0">80</li>
+                  <li data-v="0">70</li>
+                </ul>
+                <div class="retro"></div>
+            </div>
+            <div class="pregunta arrastre" data-id="3" >
+              <p>3.- Completa el siguiente planteamiento, para lo cual deberás arrastrar el resultado correcto:</p>
+              <ul class="opciones">
+                <li class="draggable" data-v="1">10F2B<sub>16</sub></li>
+                <li class="draggable" data-v="0">100101</li>
+              </ul>
+              <div class="planteamiento">
+                <div style=" flex:2 1 auto; ">El resultado de la suma 712A<sub>16</sub> + 9E01<sub>16</sub> es:</div>
+                <div style="flex: 1 1 auto; width: 200px;" class="droppable" data-v="-1" >&nbsp;</div>
+              </div>
+              <div class="retro"></div>
+            </div>
+            <div class="pregunta arrastre" data-id="4" >
+              <div class="wrap content-center">
+                  <h2>Resultados</h2>
+                  <p class="text-landing" >Tu puntaje fue de: <span id="score"></span></p>
 
+              </div>              
+            </div>
+          </div>
+          <div class="wrap" style="text-align: right; flex: 0 1 auto;" id="contNext" >
+              <div class="button" id="btnNext">Enviar</div>              
+          </div>
+          <div class="wrap" style="flex: 0 1 auto; text-align: center;" id="contRev" >
+              <div class="button" id="btnRev">Revisar el ejercicio</div>
+              <div class="button" id="btnLeccion">Volver a realizar la lección</div>
+              <div class="button" id="btnSalir">Salir</div>
+          </div>
+        </section>
+        <section>
+          <div class="wrap size-50">
+              <h2>
+                <svg class="fa-heart-o">
+                  <use xlink:href="#fa-heart-o"></use>
+                </svg>
+                Referencias
+              </h2>
+              <p class="text-intro">Agradecemos el uso de las siguientes imagenes</p>
+              <hr>
+              <ul class="description">
+                <li>Fischer Twins (2017), <em>perfect in their differences</em> <a href='https://unsplash.com/photos/uSPjZzYwXO4' target='_blank'>https://unsplash.com/photos/uSPjZzYwXO4</a></li>
+                <li>Nick Hillier (2017), <em>Info</em> <a href='https://unsplash.com/photos/yD5rv8_WzxA' target='_blank'>https://unsplash.com/photos/yD5rv8_WzxA</a>                </li>
+                <li>Geralt (2018), <em>código binario</em> <a href='https://pixabay.com/es/binaria-código-binario-3168094/' target='_blank'>https://pixabay.com/es/binaria-código-binario-3168094/</a>                  </li>
+                <li>Freepik (2018), <em>Binary settings</em> <a href='https://www.flaticon.com/free-icon/binary-code_780550' target='_blank'>https://www.flaticon.com/free-icon/binary-code_780550</a></li>
+                <li>Freepik (2018), <em>Binary code</em> <a href='https://www.flaticon.com/free-icon/binary-code_586262' target='_blank'>https://www.flaticon.com/free-icon/binary-code_586262</a>                  </li>
+                <li>Joanna Kosinska (2016), <em>Minimal pencils on yellow</em> <a href='https://unsplash.com/photos/1_CMoFsPfso' target='_blank'>https://unsplash.com/photos/1_CMoFsPfso</a></li>
+              </ul>
+          </div>
+        </section>
       </article>
       <!-- end article -->
     </main>
@@ -329,13 +404,27 @@
 
     <!-- Required -->
     <script src="static/js/webslides.js"></script>
+    <script src="js/main.js"></script>
     <script>
+      document.getElementById('webslides').addEventListener('ws:slide-change', function(event){
+        console.log(event.detail);
+        switch (event.detail.currentSlide) {
+          case 4:            
+            $('.subsected .wrap[data-sub]').addClass('hidden');
+            $('.subsected .wrap[data-sub="menu"]').removeClass('hidden');
+            break;
+        
+          default:
+            break;
+        }
+      });
       window.ws = new WebSlides();
+      inicializaCuestionario();
     </script>
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
     <script defer src="static/js/svg-icons.js"></script>
 
-    <script src="js/main.js"></script>
+    
   </body>
 </html>

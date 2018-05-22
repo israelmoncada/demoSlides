@@ -15,3 +15,60 @@ table.minimo tr>th, table.minimo tr>td{
 table.minimo tr>th:first, table.minimo tr>td:first{
     width: 30%;    
 }
+
+p.importante{
+    padding-left: 50px;
+    text-indent: -55px;
+}
+p.importante svg{
+    width: 50px;
+    height: auto;
+}
+
+section.cuestionario div.pregunta{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    height: 0;
+    display: none;
+}
+section.cuestionario div.pregunta.active{
+    opacity: 1;
+    height: auto;
+    background: #fff;
+    display: block;
+}
+ul.respuesta >li{
+    cursor: pointer;
+}
+ul.respuesta >li.selected{
+    background:rgba(44, 130, 151, 0.6);
+}
+.retro{ padding: 0.5rem; }
+.retro.info{ background: #3b3bce;  color: #fff; }
+.retro.error{ background: #ad0707; color: #fff; }
+.retro.ok{ background: #307830; color: #fff; }
+
+section.cuestionario div.pregunta ul.opciones {
+    list-style: none;
+    background: #6c6cf5;
+    padding: 0.5rem;
+}
+section.cuestionario div.pregunta ul.opciones li{
+    background: #faf8f5;
+    color: #6c6cf5;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    cursor: move;
+    width: 150px;
+}
+section.cuestionario div.pregunta .planteamiento{
+    display: flex;
+    background: #3b3bce;
+    color: #fff;
+    margin: 2rem auto;
+    height: 7rem;
+}
+
+section.cuestionario div.pregunta .planteamiento .droppable{
+    background: #fffbee;
+}
