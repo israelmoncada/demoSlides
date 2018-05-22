@@ -29,6 +29,19 @@ function muestraPreguntaActual(){
         $('#contNext').hide();
         $('#contRev').show();
         $('#score').text( Math.round((score/3)*100.0));
+        var imgsrc='images/';
+        switch(score){
+            case 3:
+                imgsrc += '001-medal.png';
+                break;
+            case 2:
+                imgsrc += '002-silver-medal.png';
+                break;
+            case 1:
+            case 0:
+                imgsrc += '003-flag.png';                
+        }
+        $('#imgResult').prop('src', imgsrc );
     }
     //var $pregunta = $('.cuestionario .pregunta.active');
     //$('.cuestionario .retro', pregunta).hide().removeClass('info error ok');
