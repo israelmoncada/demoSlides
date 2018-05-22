@@ -1,0 +1,17 @@
+.hidden{ height: 0px;}
+table.minimo{    
+    width: 80%; 
+    margin: auto;
+}
+
+table.minimo tr>th, table.minimo tr>td{
+    width: 10%;
+    font-size: 0.75em;
+    line-height: 2.5rem;
+    padding: .5rem 1rem;
+    vertical-align: middle;
+    text-align: center;
+}
+table.minimo tr>th:first, table.minimo tr>td:first{
+    width: 30%;    
+}

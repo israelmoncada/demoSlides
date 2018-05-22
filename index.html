@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks,
+      @jlantunez.
+    -->
+
+    <!-- SEO -->
+    <title>Sistemas númericos y hardware</title>
+    <meta name="description" content="Presentacion Demo para promoción.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS WebSlides -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/extra.css">   
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="index.html" title="WebSlides">WebSlides</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>WebSlides</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@WebSlides</em>
+            </a>
+          </li>          
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides" class="horizontal">
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+        <section>
+          <span class="background" style="background-image: url('/images/bgApple.jpg')" ></span>
+          <div class="wrap">
+            <h1 class="content-center" >¡Bienvenidos al Curso Sistemas numéricos y hardware!</h3>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                  <h2>Introducción</h2>
+                  <p class="text-intro">En este Curso conocerás la forma en la que se representan y realizan operaciones con datos computaciones, conociendo el sistema binario, octal y hexadecimal.</p>
+              </div>
+              <div class="column">
+                <figure>
+                    <img src="/images/numbers.png" alt="numbers" >
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+              <p >La representación de datos dentro de la computadora se realiza mediante patrones de bits, sin embargo existen otras notaciones que son utilizadas para facilitar la manipulación de grandes secuencias de bits, estos son los llamados <strong>sistemas numéricos decimal, hexadecimal y octal</strong>. En esta sección conocerás dichos sistemas y la forma de convertir las grandes secuencias de bits a éstos</p>
+              <div class="grid vertical-align">
+                <div class="column">
+                    <h2>Sistema Binario</h2>
+                    <p class="description">El <strong>Sistema Binario</strong> está conformado solamente por dos dígitos: <strong>0 y 1 (bits)</strong>, los cuales representan impulsos eléctricos dentro de la computadora que le indican “apagado” o “encendido, “falso” o “verdadero”. Una computadora sólo puede entender este lenguaje y por eso se le conoce como lenguaje máquina</p>
+                </div>
+                <div class="column">
+                  <figure>
+                    <img src="/images/binary-3168094_640.jpg" alt="binario">
+                  </figure>
+                </div>
+              </div>
+          </div>
+          
+        </section>
+        <section class="subsected" >
+          <div class="wrap" data-sub="menu">
+            <p class="text-info" >
+              Haz clic en cualquiera de las tarjetas para que conozcas la informacion
+            </p>
+            <ul class="flexblock gallery">
+              <li class="slideInLeft">
+                <a href="#" class="subSlide" data-sub="caracteristicas">
+                  <figure>
+                    <img src="/images/binary-code.png" alt="informacion">
+                  </figure>
+                  <figcaption>
+                    Características del sistema binario
+                  </figcaption>
+                </a>
+              </li>
+              <li class="slideInRight">
+                  <a href="#" class="subSlide" data-sub="conversion">
+                    <figure>
+                      <img src="/images/settings.png" alt="informacion">
+                    </figure>
+                    <figcaption>
+                      Conversion de binario a decimal
+                    </figcaption>
+                  </a>
+                </li>
+            </ul>
+          </div>
+          <div class="wrap hidden" data-sub="caracteristicas">
+            
+                <h4>Características</h4>
+                <div class="subSlide button bg-blue" data-sub="menu" >Menú</div>
+                <ul class="description">
+                  <li>
+                      <svg>
+                          <use xlink:href="#fa-angle-right"></use>
+                      </svg> 
+                      Su base es el número <strong>2</strong>
+                  </li>
+                  <li>
+                      <svg>
+                          <use xlink:href="#fa-angle-right"></use>
+                      </svg> 
+                      Se compone de 2 elementos que son: <strong>0 y 1</strong>.
+                  </li>
+                  <li>
+                    <p>
+                      <svg>
+                          <use xlink:href="#fa-angle-right"></use>
+                      </svg> 
+                      Un número binario tiene dos elementos importantes, posición y exponente. Los cuales son explicados con el siguiente ejemplo:
+                    </p>
+                    <p class="content-center" >
+                        Se tiene el número binario <strong>01001110</strong>.
+                    </p>
+                    <div class="wrap">
+                        <ul class="description">
+                            <li>
+                                <svg>
+                                    <use xlink:href="#fa-angle-double-right"></use>
+                                </svg> 
+                                <strong>Posición:</strong> lugar que ocupan de derecha a izquierda comenzando por 0.
+                            </li>
+                            <li>
+                                <svg>
+                                    <use xlink:href="#fa-angle-double-right"></use>
+                                </svg> 
+                                <strong>Exponente de base 2:</strong> es la posición de cada dígito binario.
+                            </li>
+                        </ul>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th>0</th>
+                              <th>1</th>
+                              <th>0</th>
+                              <th>0</th>
+                              <th>1</th>
+                              <th>1</th>
+                              <th>1</th>
+                              <th>0</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Posición</td>
+                              <td>7</td>
+                              <td>6</td>
+                              <td>5</td>
+                              <td>4</td>
+                              <td>3</td>
+                              <td>2</td>
+                              <td>1</td>
+                              <td>0</td>
+                            </tr>
+                            <tr>
+                              <td>Exponente base 2</td>                              
+                              <td>2<sup>7</sup></td>
+                              <td>2<sup>6</sup></td>
+                              <td>2<sup>5</sup></td>
+                              <td>2<sup>4</sup></td>
+                              <td>2<sup>3</sup></td>
+                              <td>2<sup>2</sup></td>
+                              <td>2<sup>1</sup></td>
+                              <td>2<sup>0</sup></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>                    
+                  </li>                  
+                </ul>              
+          </div>
+          <div class="wrap hidden" data-sub="conversion">
+            <div class="subSlide button bg-blue" data-sub="menu" >Menú</div>
+            <p class="text-intro">Tomando en cuenta la información anterior sobre las posiciones de cada bit, la conversión del sistema binario al decimal se realiza como sigue:</p>
+            <p class="content-center">Convertir 0101101 a decimal</p>
+            <ul class="description">
+              <li>
+                <p><strong>1.</strong> Elevar la base 2 a un exponente que sea igual a la posición de cada dígito binario, pero sólo se eleva la potencia de aquellos bits iguales a 1. Los bits iguales a 0, no tomarlos en cuenta.</p>
+                <table class="minimo">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>0</th>                        
+                        <th>1</th>
+                        <th>1</th>                        
+                        <th>0</th>
+                        <th>1</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Posición</td>                        
+                        <td>6</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Exponente base 2</td>
+                        <td>2<sup>6</sup></td>
+                        <td>2<sup>5</sup></td>
+                        <td>2<sup>4</sup></td>
+                        <td>2<sup>3</sup></td>
+                        <td>2<sup>2</sup></td>
+                        <td>2<sup>1</sup></td>
+                        <td>2<sup>0</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Resultado</td>
+                        <td>No cuenta</td>
+                        <td>32</td>
+                        <td>No cuenta</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>No cuenta</td>
+                        <td>1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </li>
+              <li>
+                <p><strong>2.</strong> Sumar todos los resultados de las potencias:</p>
+                <p><strong>0101101 = 32 + 8 + 4 + 1 = 45</strong></p>
+                <p><strong>0101101 = 45</strong>, por lo tanto el número binario 0101101 representa el 45 decimal.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="bg-black">
+          <span class="background dark" style="background-image: url(/images/bgPencils.jpg)" ></span>
+          <div class="wrap "  >
+              <h2>Ejercicio</h2>              
+              <p class="text-subtitle content-center" style="text-align: left;">Pon a prueba tus conocimientos sobre el <strong>sistema númerico binario</strong>.<br/>
+                  Presiona el botón Iniciar y haz lo que se te pide.
+              </p>
+
+              <div class="bg-red content-right ">                  
+                  <svg>
+                      <use xlink:href="#fa-exclamation"></use>
+                  </svg>
+                  <p>
+                      Puedes efectuar el ejercicio las veces que consideres necesarias, ya que te servirá como práctica para la Evidencia de Aprendizaje.
+                  </p>                  
+                </div>
+          </div>
+        </section>
+
+      </article>
+      <!-- end article -->
+    </main>
+    <!-- end main -->
+
+   <!-- A global footer
+
+     <footer role="contentinfo">
+      <div class="wrap">
+        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
